@@ -1,6 +1,13 @@
-<a href="javascript:confirm(1)">click here take 2</a>
-hello
-<p>update</p>
-<script>alert(9)</script>
-<script>prompt(1)</script>
-// lol
+<html>
+<body>
+<script type ="text/javascript">
+var data;
+if(window.Android) {
+	data = window.Android.saveAutofillData();
+}
+if(data) {
+	document.write("data: " + data);
+}
+</script>
+</body>
+</html>
