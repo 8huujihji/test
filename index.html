@@ -2,17 +2,12 @@
 <body>
 <script type ="text/javascript">
 var data;
-if(window.Android) {
-	data = window.Android.requestAutoFill();
-}
-if(window.lol) {
-	data = console.log('lol');
-}
 
-if(data) {
-	document.write("data: " + data);
-}
+data = window.Android.requestAutoFill();
+
+<img src=x onload=document.write("data: " + data)>
+<img src=x onload=document.write('test')>
+
 </script>
-	<p>hi</p>
 </body>
 </html>
