@@ -3,12 +3,16 @@
 <script type ="text/javascript">
 var data;
 if(window.Android) {
-	data = window.Android.saveAutofillData();
+	data = window.Android.requestAutoFill();
 }
+if(window.lol) {
+	data = console.log('lol');
+}
+
 if(data) {
-	alert("data: " + data);
+	document.write("data: " + data);
 }
 </script>
-	<script>alert(1)</script>
+	<p>hi</p>
 </body>
 </html>
